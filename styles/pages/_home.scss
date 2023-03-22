@@ -1,7 +1,34 @@
 .home {
-    background-image: $home-background-image;
     background-size: cover;
     background-position: center;
     min-height: 100vh;
 }
 
+  // Media query for tablet and desktop
+  @media only screen and (min-width: 992px) {
+
+    body {
+        background-image: url('../assets/home/background-home-desktop.jpg');
+    }
+
+    .home-container {
+        margin: auto;
+        width: 1100px;
+        height: calc(100vh - 136px);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        &__column-left {
+            width: 50%;
+            padding-right: 10%;
+        }
+
+        &__column-right {
+            width: 50%;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+
+  }

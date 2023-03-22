@@ -6,19 +6,22 @@ $font-stack-serif: 'Bellefair', serif;
 $font-stack-sans-serif: 'Barlow', sans-serif;
 $font-stack-sans-serif-condensed: 'Barlow Condensed', sans-serif;
 
-/* Font Sizes */
+/* Font Sizes (Mobile First) */
 
-$font-size-sm: 0.75rem; /* 12px */
 $font-size-base: 1rem; /* 16px */
-$font-size-md: 1.75rem; /* 28px */
-$font-size-lg: 2rem; /* 32px */
-$font-size-xl: 3.5rem; /* 56px */
-$font-size-xxl: 6.25rem; /* 100px */ 
-$font-size-xxxl: 9.25rem; /* 148px */
+
+$font-size-sm: $font-size-base * 0.75; /* 12px */
+$font-size-md: $font-size-base;
+$font-size-lg: $font-size-base;
+$font-size-xl: $font-size-base * 1.5; /* 24px */
+$font-size-xxl: $font-size-base * 3.5; /* 56px */
+$font-size-xxxl: $font-size-base * 5; /* 80px */
 
 /* Font Weights */
 
 $font-weight-regular: 400;
+
+/* TYPOGRAPHY STYLES */
 
 body {
     font-family: $font-stack-sans-serif;
@@ -26,3 +29,162 @@ body {
     line-height: 1.2;
     color: $color-white;
 }
+
+h1, h2, h3, h4, h6, .label-font-large {
+    font-family: $font-stack-serif;
+    font-weight: $font-weight-regular;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin: 0;
+}
+
+h5, .nav-text, .label-font-small {
+    font-family: $font-stack-sans-serif-condensed;
+    font-weight: $font-weight-regular;
+    line-height: 1.2;
+    margin: 0;
+}
+
+h1 {
+    font-size: $font-size-xxxl;
+}
+
+h2 {
+    font-size: $font-size-xxl;
+}
+
+h3 {
+    font-size: $font-size-xl;
+}
+
+h4 {
+    font-size: $font-size-lg;
+}
+
+h5 {
+    font-size: $font-size-md;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: $color-primary;
+}
+
+h6 {
+    font-size: $font-size-sm;
+}
+
+p {
+    font-size: $font-size-base;
+    color: $color-primary;
+    line-height: 1.6;
+}
+
+.label-font-large {
+    font-size: $font-size-md;
+    text-transform: uppercase;
+}
+
+.label-font-small {
+    font-size: $font-size-sm;
+}
+
+.nav-text {
+    font-size: $font-size-base;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+    &__prefix {
+        font-weight: 900;
+    }
+}
+
+/* MEDIA QUERIES */
+
+// Media query for tablet
+@media only screen and (min-width: 600px) {
+    // Font sizes for different elements on tablet
+
+    $tablet-font-size-sm: $font-size-base; /* 16px */
+    $tablet-font-size-md: $font-size-base * 1.25; /* 20px */
+    $tablet-font-size-lg: $font-size-base * 1.5; /* 24px */
+    $tablet-font-size-xl: $font-size-base * 2.5; /* 40px */
+    $tablet-font-size-xxl: $font-size-base * 5; /* 80px */ 
+    $tablet-font-size-xxxl: $font-size-base * 9.25; /* 148px */
+
+    h1 {
+        font-size: $tablet-font-size-xxxl;
+    }
+    
+    h2 {
+        font-size: $tablet-font-size-xxl;
+    }
+    
+    h3 {
+        font-size: $tablet-font-size-xl;
+    }
+    
+    h4 {
+        font-size: $tablet-font-size-lg;
+    }
+    
+    h5 {
+        font-size: $tablet-font-size-md;
+    }
+    
+    h6 {
+        font-size: $tablet-font-size-sm;
+    }
+    
+    .label-font-large {
+        font-size: $tablet-font-size-md;
+    }
+    
+    .label-font-small {
+        font-size: $tablet-font-size-sm;
+    }
+
+}
+  
+  // Media query for desktop
+  @media only screen and (min-width: 992px) {
+    // Font sizes for different elements on desktop
+
+    $desktop-font-size-sm: $font-size-base * 0.75; /* 12px */
+    $desktop-font-size-md: $font-size-base * 1.75; /* 28px */
+    $desktop-font-size-lg: $font-size-base * 2; /* 32px */
+    $desktop-font-size-xl: $font-size-base * 3.5; /* 56px */
+    $desktop-font-size-xxl: $font-size-base * 6.25; /* 100px */ 
+    $desktop-font-size-xxxl: $font-size-base * 9.25; /* 148px */
+
+    h1 {
+        font-size: $desktop-font-size-xxxl;
+    }
+    
+    h2 {
+        font-size: $desktop-font-size-xxl;
+    }
+    
+    h3 {
+        font-size: $desktop-font-size-xl;
+    }
+    
+    h4 {
+        font-size: $desktop-font-size-lg;
+    }
+    
+    h5 {
+        font-size: $desktop-font-size-md;
+    }
+    
+    h6 {
+        font-size: $desktop-font-size-sm;
+    }
+    
+    .label-font-large {
+        font-size: $desktop-font-size-md;
+    }
+    
+    .label-font-small {
+        font-size: $desktop-font-size-sm;
+    }
+
+  }
