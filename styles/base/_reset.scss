@@ -1,15 +1,30 @@
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
-img, svg {
-    height: auto;
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+    margin: 0;
+}
+
+img, picture, svg {
+    display: block;
     max-width: 100%;
 }
 
 body {
     margin: 0;
-    padding-top: 40px;
+    min-height: 100vh;
 }
 
 button {
@@ -26,4 +41,21 @@ li {
     list-style: none;
     margin: 0;
     padding: 0;   
+}
+
+/* prevents from having to style the buttons individually */
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* -------------------------- */
+/* THEME ONLY                 */
+/* -------------------------- */
+
+body {
+    padding-top: 40px;
 }

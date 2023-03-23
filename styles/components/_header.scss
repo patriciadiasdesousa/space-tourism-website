@@ -1,4 +1,25 @@
-  // Media query for tablet and desktop
+.hamburguer {
+    display: inline-block;
+    background-color: transparent;
+    border: 0px;
+}
+
+.site-header {
+
+    img {
+        padding-inline: 1rem;
+    }
+
+    &__divider {
+        display: none;
+    }
+
+    &__nav {
+        display: none;
+    }
+}
+
+// Media query for tablet and desktop
   @media only screen and (min-width: 600px) {
 
     .site-header {
@@ -8,12 +29,6 @@
         justify-content: space-between;
         align-items: center;
         height: 96px;
-    
-        & img {
-            max-height: 48px;
-            margin-left: 40px;
-            margin-right: 60px;
-        }
     
         &__divider {
             min-width: 30%;
@@ -40,6 +55,11 @@
             }
     
         }
+
     }
 
   }
+
+.hamburguer {
+    display: none;
+}

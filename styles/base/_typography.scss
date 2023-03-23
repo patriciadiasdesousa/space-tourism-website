@@ -35,14 +35,12 @@ h1, h2, h3, h4, h6, .label-font-large {
     font-weight: $font-weight-regular;
     text-transform: uppercase;
     line-height: 1.2;
-    margin: 0;
 }
 
 h5, .nav-text, .label-font-small {
     font-family: $font-stack-sans-serif-condensed;
     font-weight: $font-weight-regular;
     line-height: 1.2;
-    margin: 0;
 }
 
 h1 {
@@ -65,7 +63,7 @@ h5 {
     font-size: $font-size-md;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    color: $color-primary;
+    color: $color-accent;
 }
 
 h6 {
@@ -74,7 +72,7 @@ h6 {
 
 p {
     font-size: $font-size-base;
-    color: $color-primary;
+    color: $color-accent;
     line-height: 1.6;
 }
 

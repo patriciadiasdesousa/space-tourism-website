@@ -1,0 +1,15 @@
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.container {
+    padding-inline: 2em; /* shorthand property used to set the padding on the left and right sides of an element's content area */
+    margin-inline: auto; /* shorthand property used to set the margin on the left and right sides of an element. Because it's set to auto here, it will center the container in the page */
+    max-width: 1100px;
+    min-height: calc(100vh - 136px);
+    margin: auto;
+}
