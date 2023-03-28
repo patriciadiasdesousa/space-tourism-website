@@ -13,3 +13,9 @@
     min-height: calc(100vh - 136px);
     margin: auto;
 }
+
+/* The flow utility class allows us to consistently space the bottom margin of the elements inside a container. In this case all the children of a parent container, in exception of the first child, will have a margin bottom of 1rem */
+.flow > *:not(:first-child) {
+    margin-top: 1rem;
+    outline: 1px solid red;
+}

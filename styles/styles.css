@@ -1,4 +1,157 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
+/* ----------------------- */
+/* VARIABLES               */
+/*-------------------------*/
+/* Font Styles */
+/* Font Sizes */
+/* 14px */
+/* 16px */
+/* 16px */
+/* 16px */
+/* 24px */
+/* 56px */
+body {
+  background-color: aqua;
+}
+
+/* Font Weights */
+/* ----------------------- */
+/* MEDIA QUERIES      */
+/*-------------------------*/
+/* styles for mobile devices */
+@media (max-width: 767px) {
+  /* styles for mobile devices */
+  body {
+    background-color: blue;
+  }
+}
+/* styles for tablet devices */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* styles for tablet devices */
+  body {
+    background-color: red;
+  }
+  /* 20px */
+  /* 24px */
+  /* 40px */
+  /* 80px */
+  /* 148px */
+}
+/* styles for desktop devices */
+@media (min-width: 992px) {
+  /* styles for desktop devices */
+  body {
+    background-color: orange;
+  }
+  /* 28px */
+  /* 32px */
+  /* 148px */
+}
+/* ----------------------- */
+/* UTILITY CLASSES         */
+/*-------------------------*/
+.ff-serif {
+  font-family: "Bellefair", serif;
+}
+
+.ff-sans {
+  font-family: "Barlow", sans-serif;
+}
+
+.ff-sans-condensed {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.fs-base {
+  font-size: 1rem;
+}
+
+.fs-sm {
+  font-size: 0.875rem;
+}
+
+.fs-md {
+  font-size: 1rem;
+}
+
+.fs-lg {
+  font-size: 1rem;
+}
+
+.fs-xl {
+  font-size: 1.5rem;
+}
+
+.fs-xxl {
+  font-size: 3.5rem;
+}
+
+.fs-xxxl {
+  font-size: 5rem;
+}
+
+.fw-regular {
+  font-weight: 400;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.letter-spacing-lg {
+  letter-spacing: 4.75px;
+}
+
+.letter-spacing-md {
+  letter-spacing: 2.7px;
+}
+
+.letter-spacing-sm {
+  letter-spacing: 2.35px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.numbered-title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+}
+.numbered-title span {
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+/* ----------------------- */
+/* UTILITY CLASSES         */
+/*-------------------------*/
+.bg-dark {
+  background-color: rgb(11, 13, 23);
+}
+
+.bg-white {
+  background-color: rgb(255, 255, 255);
+}
+
+.bg-accent {
+  background-color: rgb(208, 214, 249);
+}
+
+.txt-dark {
+  color: rgb(11, 13, 23);
+}
+
+.txt-white {
+  color: rgb(255, 255, 255);
+}
+
+.txt-accent {
+  color: rgb(208, 214, 249);
+}
+
 *,
 *::before,
 *::after {
@@ -25,7 +178,6 @@ img, picture, svg {
 
 body {
   margin: 0;
-  min-height: 100vh;
 }
 
 button {
@@ -56,154 +208,10 @@ select {
 /* THEME ONLY                 */
 /* -------------------------- */
 body {
-  padding-top: 40px;
-}
-
-/* Font Styles */
-/* Font Sizes (Mobile First) */
-/* 16px */
-/* 12px */
-/* 24px */
-/* 56px */
-/* 80px */
-/* Font Weights */
-/* TYPOGRAPHY STYLES */
-body {
-  font-family: "Barlow", sans-serif;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 1.2;
-  color: rgb(255, 255, 255);
 }
 
-h1, h2, h3, h4, h6, .label-font-large {
-  font-family: "Bellefair", serif;
-  font-weight: 400;
-  text-transform: uppercase;
-  line-height: 1.2;
-}
-
-h5, .nav-text, .label-font-small {
-  font-family: "Barlow Condensed", sans-serif;
-  font-weight: 400;
-  line-height: 1.2;
-}
-
-h1 {
-  font-size: 5rem;
-}
-
-h2 {
-  font-size: 3.5rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-}
-
-h4 {
-  font-size: 1rem;
-}
-
-h5 {
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  color: rgb(208, 214, 249);
-}
-
-h6 {
-  font-size: 0.75rem;
-}
-
-p {
-  font-size: 1rem;
-  color: rgb(208, 214, 249);
-  line-height: 1.6;
-}
-
-.label-font-large {
-  font-size: 1rem;
-  text-transform: uppercase;
-}
-
-.label-font-small {
-  font-size: 0.75rem;
-}
-
-.nav-text {
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-.nav-text__prefix {
-  font-weight: 900;
-}
-
-/* MEDIA QUERIES */
-@media only screen and (min-width: 600px) {
-  /* 16px */
-  /* 20px */
-  /* 24px */
-  /* 40px */
-  /* 80px */
-  /* 148px */
-  h1 {
-    font-size: 9.25rem;
-  }
-  h2 {
-    font-size: 5rem;
-  }
-  h3 {
-    font-size: 2.5rem;
-  }
-  h4 {
-    font-size: 1.5rem;
-  }
-  h5 {
-    font-size: 1.25rem;
-  }
-  h6 {
-    font-size: 1rem;
-  }
-  .label-font-large {
-    font-size: 1.25rem;
-  }
-  .label-font-small {
-    font-size: 1rem;
-  }
-}
-@media only screen and (min-width: 992px) {
-  /* 12px */
-  /* 28px */
-  /* 32px */
-  /* 56px */
-  /* 100px */
-  /* 148px */
-  h1 {
-    font-size: 9.25rem;
-  }
-  h2 {
-    font-size: 6.25rem;
-  }
-  h3 {
-    font-size: 3.5rem;
-  }
-  h4 {
-    font-size: 2rem;
-  }
-  h5 {
-    font-size: 1.75rem;
-  }
-  h6 {
-    font-size: 0.75rem;
-  }
-  .label-font-large {
-    font-size: 1.75rem;
-  }
-  .label-font-small {
-    font-size: 0.75rem;
-  }
-}
 .flex {
   display: flex;
 }
@@ -220,117 +228,36 @@ p {
   margin: auto;
 }
 
-.round-button-large {
-  background-color: rgb(255, 255, 255);
-  border: 0px solid;
-  width: 150px;
-  height: 150px;
+/* The flow utility class allows us to consistently space the bottom margin of the elements inside a container. In this case all the children of a parent container, in exception of the first child, will have a margin bottom of 1rem */
+.flow > *:not(:first-child) {
+  margin-top: 1rem;
+  outline: 1px solid red;
+}
+
+.large-button {
+  display: flex;
+  align-items: center;
+  padding: 0 2em;
+  max-width: 200px;
+  aspect-ratio: 1;
   border-radius: 50%;
-  letter-spacing: 0.2rem;
-  font-family: "Bellefair", serif;
-  text-transform: uppercase;
-}
-
-@media only screen and (min-width: 992px) {
-  .round-button-large {
-    width: 274px;
-    height: 274px;
-  }
-}
-.hamburguer {
-  display: inline-block;
-  background-color: transparent;
-  border: 0px;
-}
-
-.site-header img {
-  padding-inline: 1rem;
-}
-.site-header__divider {
-  display: none;
-}
-.site-header__nav {
-  display: none;
-}
-
-@media only screen and (min-width: 600px) {
-  .site-header {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 96px;
-  }
-  .site-header__divider {
-    min-width: 30%;
-    height: 1px;
-    background-color: rgb(255, 255, 255);
-    opacity: 0.25;
-    margin-right: -40px;
-  }
-  .site-header__nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.2);
-    width: 60%;
-  }
-  .site-header__nav ul {
-    display: flex;
-    flex-direction: row;
-    gap: 4rem;
-    justify-content: flex-end;
-  }
-}
-.hamburguer {
-  display: none;
-}
-
-body {
-  background-image: url("../assets/home/background-home-mobile.jpg");
-}
-
-.home {
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-}
-
-.home-container {
-  flex-direction: column;
   justify-content: center;
-  text-align: center;
-  row-gap: 4rem;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
 }
-.home-container .column-left {
-  flex-direction: column;
-  min-width: 100%;
+.large-button::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: opacity 500ms linear, transform 750ms ease-in-out;
+  opacity: 0;
 }
-.home-container .column-right {
-  min-width: 100%;
-  justify-content: center;
-}
-
-@media only screen and (min-width: 992px) {
-  body {
-    background-image: url("../assets/home/background-home-desktop.jpg");
-  }
-  .home-container {
-    align-items: center;
-    text-align: left;
-    justify-content: center;
-    row-gap: 4rem;
-  }
-  .home-container .column-left {
-    width: 50%;
-    padding-right: 10%;
-    flex-direction: column;
-  }
-  .home-container .column-right {
-    width: 50%;
-    justify-content: flex-end;
-  }
+.large-button:hover::after, .large-button :focus::after {
+  opacity: 1;
+  transform: scale(1.5);
 }/*# sourceMappingURL=styles.css.map */

@@ -1,5 +1,15 @@
-$color-black: rgba(11, 13, 23);
-$color-white: rgba(255, 255, 255);
-$color-accent: rgba(208, 214, 249);
+$clr-dark: (11 13 23);
+$clr-white: (255 255 255);
+$clr-accent: (208 214 249);
 
-$color-white-transparent: rgba(255, 255, 255, 0.2);
+/* ----------------------- */
+/* UTILITY CLASSES         */
+/*-------------------------*/
+
+.bg-dark { background-color: rgb( $clr-dark ); }
+.bg-white { background-color: rgb($clr-white); }
+.bg-accent { background-color: rgb($clr-accent); }
+
+.txt-dark { color: rgb( $clr-dark ); }
+.txt-white { color: rgb($clr-white); }
+.txt-accent { color: rgb($clr-accent); }

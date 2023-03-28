@@ -1,10 +1,11 @@
+@import "base/typography";
 @import "base/backgrounds";
 @import "base/colors";
 @import "base/reset";
-@import "base/typography";
 @import "base/utility-classes";
 
 @import "components/buttons";
 @import "components/header";
+@import "components/navigation";
 
 @import "pages/home";
