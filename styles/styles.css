@@ -10,10 +10,6 @@
 /* 16px */
 /* 24px */
 /* 56px */
-body {
-  background-color: aqua;
-}
-
 /* Font Weights */
 /* ----------------------- */
 /* MEDIA QUERIES      */
@@ -22,14 +18,14 @@ body {
 @media (max-width: 767px) {
   /* styles for mobile devices */
   body {
-    background-color: blue;
+    background-image: url("../assets/home/background-home-mobile.jpg");
   }
 }
 /* styles for tablet devices */
 @media (min-width: 768px) and (max-width: 991px) {
   /* styles for tablet devices */
   body {
-    background-color: red;
+    background-image: url("../assets/home/background-home-tablet.jpg");
   }
   /* 20px */
   /* 24px */
@@ -41,7 +37,7 @@ body {
 @media (min-width: 992px) {
   /* styles for desktop devices */
   body {
-    background-color: orange;
+    background-image: url("../assets/home/background-home-desktop.jpg");
   }
   /* 28px */
   /* 32px */
@@ -210,6 +206,8 @@ select {
 body {
   font-size: 1rem;
   font-weight: 400;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .flex {
@@ -260,4 +258,20 @@ body {
 .large-button:hover::after, .large-button :focus::after {
   opacity: 1;
   transform: scale(1.5);
+}
+
+.primary-navigation {
+  gap: 4rem;
+}
+.primary-navigation a {
+  text-decoration: none;
+}
+.primary-navigation a span {
+  font-weight: 700;
+  margin-right: 0.2rem;
+}
+
+.underline-indicators > * {
+  border-bottom: 2px solid rgb(255, 255, 255);
+  padding-bottom: 1rem;
 }/*# sourceMappingURL=styles.css.map */

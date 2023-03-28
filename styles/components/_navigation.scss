@@ -1,3 +1,22 @@
-.primary-navigaton {
+.primary-navigation {
+    gap: 4rem;
+
+    & a {
+        text-decoration: none;
+
+        & span {
+            font-weight: $fw-bold;
+            margin-right: 0.2rem;
+        }
     
+    }
+
+}
+
+.underline-indicators {
+
+    & > * {
+    border-bottom: 2px solid rgb($clr-white);
+    padding-bottom: 1rem;
+    }
 }

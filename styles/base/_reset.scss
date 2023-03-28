@@ -58,4 +58,6 @@ select {
 body {
     font-size: $fs-base;
     font-weight: $fw-regular;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
