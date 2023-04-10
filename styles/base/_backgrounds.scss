@@ -1,0 +1,28 @@
+.body {
+    background-size: cover;
+    background-position: bottom center;
+}
+
+.home {
+    background-image: url(../assets/home/background-home-mobile.jpg);
+}
+  
+  /* styles for tablet devices */
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* styles for tablet devices */
+
+    .home {
+        background-image: url(../assets/home/background-home-tablet.jpg);
+    }
+
+  }
+  
+  /* styles for desktop devices */
+  @media (min-width: 992px) {
+    /* styles for desktop devices */
+
+    .home {
+        background-image: url(../assets/home/background-home-desktop.jpg);
+    }
+
+  }

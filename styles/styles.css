@@ -1,51 +1,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
-/* ----------------------- */
-/* VARIABLES               */
+/*-------------------------*/
+/* INDEX                   */
+/* 1. VARIABLES            */
+/* 2. UTILITY CLASSES      */
+/* 3. MEDIA QUERIES        */
+/*-------------------------*/
+/*-------------------------*/
+/* 1. VARIABLES            */
 /*-------------------------*/
 /* Font Styles */
-/* Font Sizes */
-/* 14px */
-/* 16px */
-/* 16px */
-/* 16px */
-/* 24px */
-/* 56px */
 /* Font Weights */
+/* Font Size */
+/* 16px */
 /* ----------------------- */
-/* MEDIA QUERIES      */
+/* 2. UTILITY CLASSES      */
 /*-------------------------*/
-/* styles for mobile devices */
-@media (max-width: 767px) {
-  /* styles for mobile devices */
-  body {
-    background-image: url("../assets/home/background-home-mobile.jpg");
-  }
+/* Font Sizes */
+.fs-base {
+  font-size: 1rem;
 }
-/* styles for tablet devices */
-@media (min-width: 768px) and (max-width: 991px) {
-  /* styles for tablet devices */
-  body {
-    background-image: url("../assets/home/background-home-tablet.jpg");
-  }
-  /* 20px */
-  /* 24px */
-  /* 40px */
-  /* 80px */
-  /* 148px */
+
+.fs-sm {
+  font-size: 0.875rem; /* 14px */
 }
-/* styles for desktop devices */
-@media (min-width: 992px) {
-  /* styles for desktop devices */
-  body {
-    background-image: url("../assets/home/background-home-desktop.jpg");
-  }
-  /* 28px */
-  /* 32px */
-  /* 148px */
+
+.fs-md {
+  font-size: 1rem; /* 16px */
 }
-/* ----------------------- */
-/* UTILITY CLASSES         */
-/*-------------------------*/
+
+.fs-lg {
+  font-size: 1rem; /* 16px */
+}
+
+.fs-xl {
+  font-size: 1.5rem; /* 24px */
+}
+
+.fs-xxl {
+  font-size: 3.5rem; /* 56px */
+}
+
+.fs-xxxl {
+  font-size: clamp(5rem, 10vw, 9.25rem); /* 80px */
+}
+
+/* Font Style */
 .ff-serif {
   font-family: "Bellefair", serif;
 }
@@ -58,34 +57,7 @@
   font-family: "Barlow Condensed", sans-serif;
 }
 
-.fs-base {
-  font-size: 1rem;
-}
-
-.fs-sm {
-  font-size: 0.875rem;
-}
-
-.fs-md {
-  font-size: 1rem;
-}
-
-.fs-lg {
-  font-size: 1rem;
-}
-
-.fs-xl {
-  font-size: 1.5rem;
-}
-
-.fs-xxl {
-  font-size: 3.5rem;
-}
-
-.fs-xxxl {
-  font-size: 5rem;
-}
-
+/* Font Weight */
 .fw-regular {
   font-weight: 400;
 }
@@ -94,6 +66,7 @@
   font-weight: 700;
 }
 
+/* Letter Spacing */
 .letter-spacing-lg {
   letter-spacing: 4.75px;
 }
@@ -106,6 +79,7 @@
   letter-spacing: 2.35px;
 }
 
+/* Other styles */
 .uppercase {
   text-transform: uppercase;
 }
@@ -121,6 +95,62 @@
   margin-right: 0.5rem;
 }
 
+/*-------------------------*/
+/* 3. MEDIA QUERIES        */
+/*-------------------------*/
+/* styles for mobile devices */
+@media (max-width: 767px) {
+  /* styles for mobile devices */
+}
+/* styles for tablet devices */
+@media (min-width: 768px) {
+  /* styles for tablet devices */
+  .fs-md {
+    font-size: 1.25rem; /* 20px */
+  }
+  .fs-lg {
+    font-size: 1.5rem; /* 24px */
+  }
+  .fs-xl {
+    font-size: 12.5rem; /* 40px */
+  }
+  .fs-xxl {
+    font-size: 5rem; /* 80px */
+  }
+}
+/* styles for desktop devices */
+@media (min-width: 992px) {
+  /* styles for desktop devices */
+  .fs-md {
+    font-size: 1.75rem; /* 28px */
+  }
+  .fs-lg {
+    font-size: 2rem; /* 32px */
+  }
+}
+.body {
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.home {
+  background-image: url(../assets/home/background-home-mobile.jpg);
+}
+
+/* styles for tablet devices */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* styles for tablet devices */
+  .home {
+    background-image: url(../assets/home/background-home-tablet.jpg);
+  }
+}
+/* styles for desktop devices */
+@media (min-width: 992px) {
+  /* styles for desktop devices */
+  .home {
+    background-image: url(../assets/home/background-home-desktop.jpg);
+  }
+}
 /* ----------------------- */
 /* UTILITY CLASSES         */
 /*-------------------------*/
@@ -200,6 +230,19 @@ select {
   font: inherit;
 }
 
+/* screen reader only - REVIEW */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+
 /* -------------------------- */
 /* THEME ONLY                 */
 /* -------------------------- */
@@ -208,8 +251,23 @@ body {
   font-weight: 400;
   background-repeat: no-repeat;
   background-size: cover;
+  color: rgb(208, 214, 249);
+  font-family: "Barlow", sans-serif;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+}
+body p {
+  line-height: 1.8;
 }
 
+/* --------------------------*/
+/* INDEX - UTILITY CLASSES   */
+/* --------------------------*/
+/*    1. Displays            */
+/*    2. Containers          */
+/* --------------------------*/
+/* 1. Displays */
 .flex {
   display: flex;
 }
@@ -218,6 +276,11 @@ body {
   display: grid;
 }
 
+.d-block {
+  display: block;
+}
+
+/* 2 Containers */
 .container {
   padding-inline: 2em; /* shorthand property used to set the padding on the left and right sides of an element's content area */
   margin-inline: auto; /* shorthand property used to set the margin on the left and right sides of an element. Because it's set to auto here, it will center the container in the page */
@@ -226,6 +289,33 @@ body {
   margin: auto;
 }
 
+.grid-container {
+  display: grid;
+  text-align: center;
+  /*  place-items is a shorthand property used to set both the align-items and justify-items properties simultaneously for all the items inside a grid or flex container. These properties control the alignment of items along the vertical and horizontal axes, respectively. */
+  place-items: center;
+  padding-inline: 2rem;
+}
+
+/* styles for desktop devices */
+@media (min-width: 992px) {
+  /* styles for desktop devices */
+  .grid-container {
+    grid-template-columns: minmax(2rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(2rem, 1fr);
+    gap: 2rem;
+    text-align: left;
+  }
+  .grid-container > *:first-child {
+    grid-column: 2;
+  }
+  .grid-container > *:last-child {
+    grid-column: 3;
+  }
+  .home .grid-container {
+    padding-bottom: max(6rem, 20vh);
+    align-items: end;
+  }
+}
 /* The flow utility class allows us to consistently space the bottom margin of the elements inside a container. In this case all the children of a parent container, in exception of the first child, will have a margin bottom of 1rem */
 .flow > *:not(:first-child) {
   margin-top: 1rem;
@@ -233,16 +323,16 @@ body {
 }
 
 .large-button {
-  display: flex;
+  display: inline-grid;
   align-items: center;
   padding: 0 2em;
-  max-width: 200px;
   aspect-ratio: 1;
   border-radius: 50%;
   justify-content: center;
   text-decoration: none;
   position: relative;
   z-index: 1;
+  font-size: 2rem;
 }
 .large-button::after {
   content: "";
@@ -261,7 +351,12 @@ body {
 }
 
 .primary-navigation {
+  padding: 2rem;
   gap: 4rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  /* backdrop-filter property is used to apply one or more filter effects to the area behind an element. In this case we used the blur filter */
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
 }
 .primary-navigation a {
   text-decoration: none;
@@ -271,7 +366,77 @@ body {
   margin-right: 0.2rem;
 }
 
+/* styles for mobile devices */
+@media (max-width: 767px) {
+  /* styles for mobile devices */
+  .primary-navigation {
+    flex-direction: column;
+    position: fixed;
+    z-index: 1000;
+    inset: 0 0 0 30%;
+    padding: min(20rem, 20vh) 2rem;
+    gap: 1rem;
+  }
+}
+.tab-list {
+  gap: 2rem;
+}
+
 .underline-indicators > * {
-  border-bottom: 2px solid rgb(255, 255, 255);
+  cursor: pointer;
+  border: 0;
+  border-bottom: 0.2rem solid rgba(255, 255, 255, 0);
   padding-bottom: 1rem;
+  position: relative;
+}
+.underline-indicators > *:hover, .underline-indicators > * :focus {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.underline-indicators > *.active {
+  border-color: rgb(255, 255, 255);
+}
+
+/* styles for mobile devices */
+@media (max-width: 767px) {
+  /* styles for mobile devices */
+  .primary-navigation.underline-indicators > * {
+    border: 0;
+  }
+}
+.dot-indicators {
+  gap: 1rem;
+}
+.dot-indicators > * {
+  cursor: pointer;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 0px;
+  padding: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.dot-indicators > *:hover, .dot-indicators > * :focus {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.dot-indicators > *.active {
+  background-color: rgb(255, 255, 255);
+}
+
+.number-indicators {
+  gap: 1rem;
+}
+.number-indicators > * {
+  cursor: pointer;
+  width: 4rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background-color: rgb(11, 13, 23);
+}
+.number-indicators > *:hover, .number-indicators > * :focus {
+  border-color: rgba(255, 255, 255, 0.5);
+  background-color: rgb(255, 255, 255);
+  color: rgb(11, 13, 23);
+}
+.number-indicators > *.active {
+  border-color: rgb(255, 255, 255);
 }/*# sourceMappingURL=styles.css.map */

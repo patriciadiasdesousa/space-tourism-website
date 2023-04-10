@@ -7,22 +7,47 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="stylesheet" href="./styles/styles.css">
   
-  <title>Space tourism website</title>
+  <title>Frontend Mentor | Space tourism website</title>
 </head>
-<body>
-  <div>
-    <nav>
-      <ul class="primary-navigation underline-indicators flex">
-        <li><a href="#" class="ff-sans-condensed fw-regular fs-base txt-white uppercase"><span>01</span>Home</li>
-        <li><a href="#" class="ff-sans-condensed fw-regular fs-base txt-white uppercase"><span>02</span>Destination</li>
-        <li><a href="#" class="ff-sans-condensed fw-regular fs-base txt-white uppercase"><span>03</span>Crew</a></li>
-        <li><a href="#" class="ff-sans-condensed fw-regular fs-base txt-white uppercase"><span>04</span>Technology</a></li>
-      </ul>
-    </nav>
-  </div>
+<body class="home bg-dark">
 
-  <h1 class="txt-white ff-serif fs-xxxl uppercase fw-regular">Space 1</h1>
-<a href="#" class="large-button bg-white txt-dark ff-serif uppercase">Explore</a>
- 
+  <header class="primary-header flex">
+    
+    <!-- LOGO -->
+    <div>
+      <img src="./assets/shared/logo.svg" alt="space tourism logo" class="logo">
+    </div>
+
+    <!-- MOBILE MENU -->
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+
+    <!-- NAVIGATION -->
+      <nav>
+        <ul id="primary-navigation" class="primary-navigation underline-indicators flex">
+          <li class="active"><a href="index.html" class="ff-sans-condensed fw-regular fs-base txt-white uppercase letter-spacing-md"><span>01</span>Home</a></li>
+          <li><a href="destination.html" class="ff-sans-condensed fw-regular fs-base txt-white uppercase letter-spacing-md"><span>02</span>Destination</a></li>
+          <li><a href="crew.html" class="ff-sans-condensed fw-regular fs-base txt-white uppercase letter-spacing-md"><span>03</span>Crew</a></li>
+          <li><a href="technology.html" class="ff-sans-condensed fw-regular fs-base txt-white uppercase letter-spacing-md"><span>04</span>Technology</a></li>
+        </ul>
+      </nav>
+
+  </header>
+
+  <main class="grid-container">
+
+    <div>
+      <h1 class="fs-md ff-sans-condensed txt-accent fw-regular uppercase letter-spacing-lg">So, you want to travel to
+      <span class="fs-xxxl ff-serif txt-white fw-regular uppercase d-block">Space</span></h1>
+      <p>Let's face it; if you want to go to space, you might as well genuinely go to 
+      outer space and not hover kind of on the edge of it. Well sit back, and relax 
+      because we'll give you a truly out of this world experience!</p>
+    </div>
+
+    <div>
+      <a href="#" class="large-button bg-white txt-dark ff-serif uppercase">Explore</a>
+    </div>
+    
+  </main>
+
 </body>
 </html>

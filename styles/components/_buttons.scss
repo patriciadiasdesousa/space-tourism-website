@@ -1,14 +1,14 @@
 .large-button {
-    display: flex;
+    display: inline-grid;
     align-items: center;
     padding: 0 2em;
-    max-width: 200px;
     aspect-ratio: 1;
     border-radius: 50%;
     justify-content: center;
     text-decoration: none;
     position: relative;
     z-index: 1;
+    font-size: 2rem;
 
     &::after {
         content: '';

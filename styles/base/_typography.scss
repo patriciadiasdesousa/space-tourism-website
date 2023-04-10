@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap');
 
+/*-------------------------*/
+/* INDEX                   */
+/* 1. VARIABLES            */
+/* 2. UTILITY CLASSES      */
+/* 3. MEDIA QUERIES        */
+/*-------------------------*/
 
-/* ----------------------- */
-/* VARIABLES               */
+/*-------------------------*/
+/* 1. VARIABLES            */
 /*-------------------------*/
 
 /* Font Styles */
@@ -11,89 +17,47 @@ $ff-serif: 'Bellefair', serif;
 $ff-sans: 'Barlow', sans-serif;
 $ff-sans-condensed: 'Barlow Condensed', sans-serif;
 
-/* Font Sizes */
-
-$fs-sm: 0.875rem; /* 14px */
-$fs-base: 1rem; /* 16px */
-$fs-md: 1rem; /* 16px */
-$fs-lg: 1rem; /* 16px */
-$fs-xl: 1.5rem; /* 24px */
-$fs-xxl: 3.5rem; /* 56px */ 
-$fs-xxxl: 5rem;
-
 /* Font Weights */
 
 $fw-regular: 400;
 $fw-bold: 700;
 
-/* ----------------------- */
-/* MEDIA QUERIES      */
-/*-------------------------*/
+/* Font Size */
 
-/* styles for mobile devices */
-@media (max-width: 767px) {
-    /* styles for mobile devices */
-
-    body {
-        background-image: url('../assets/home/background-home-mobile.jpg');
-    }
-
-  }
-  
-  /* styles for tablet devices */
-  @media (min-width: 768px) and (max-width: 991px) {
-    /* styles for tablet devices */
-
-    body {
-        background-image: url('../assets/home/background-home-tablet.jpg');
-    }
-
-
-    $fs-md: 1.25rem; /* 20px */
-    $fs-lg: 1.5rem; /* 24px */
-    $fs-xl: 2.5rem; /* 40px */
-    $fs-xxl: 5rem; /* 80px */
-    $fs-xxxl: 9.25rem; /* 148px */
-
-  }
-  
-  /* styles for desktop devices */
-  @media (min-width: 992px) {
-    /* styles for desktop devices */
-
-    body {
-        background-image: url('../assets/home/background-home-desktop.jpg');
-    }
-
-
-    $fs-md: 1.75rem; /* 28px */
-    $fs-lg: 2rem; /* 32px */
-    $fs-xxxl: 9.25rem; /* 148px */
-
-  }
+$fs-base: 1rem; /* 16px */
 
 /* ----------------------- */
-/* UTILITY CLASSES         */
+/* 2. UTILITY CLASSES      */
 /*-------------------------*/
+
+/* Font Sizes */
+
+.fs-base { font-size: $fs-base; }
+.fs-sm { font-size: 0.875rem; /* 14px */; }
+.fs-md { font-size: 1rem; /* 16px */ }
+.fs-lg { font-size: 1rem; /* 16px */ }
+.fs-xl { font-size: 1.5rem; /* 24px */ }
+.fs-xxl { font-size: 3.5rem; /* 56px */ }
+.fs-xxxl { font-size: clamp(5rem, 10vw, 9.25rem); /* 80px */ }
+
+/* Font Style */
 
 .ff-serif { font-family: $ff-serif ;}
 .ff-sans { font-family: $ff-sans; }
 .ff-sans-condensed { font-family: $ff-sans-condensed; }
 
-.fs-base { font-size: $fs-base; }
-.fs-sm { font-size: $fs-sm; }
-.fs-md { font-size: $fs-md; }
-.fs-lg { font-size: $fs-lg; }
-.fs-xl { font-size: $fs-xl; }
-.fs-xxl { font-size: $fs-xxl; }
-.fs-xxxl { font-size: $fs-xxxl; }
+/* Font Weight */
 
 .fw-regular { font-weight: $fw-regular; }
 .fw-bold { font-weight: $fw-bold; }
 
+/* Letter Spacing */
+
 .letter-spacing-lg { letter-spacing: 4.75px; }
 .letter-spacing-md { letter-spacing: 2.7px; }
 .letter-spacing-sm { letter-spacing: 2.35px; }
+
+/* Other styles */
 
 .uppercase { text-transform: uppercase; }
 
@@ -107,4 +71,34 @@ $fw-bold: 700;
         font-weight: $fw-bold;
         margin-right: .5rem;
     }
+}
+
+/*-------------------------*/
+/* 3. MEDIA QUERIES        */
+/*-------------------------*/
+
+/* styles for mobile devices */
+@media (max-width: 767px) {
+  /* styles for mobile devices */
+
+}
+
+/* styles for tablet devices */
+@media (min-width: 768px) {
+  /* styles for tablet devices */
+
+  .fs-md { font-size: 1.25rem; /* 20px */ }
+  .fs-lg { font-size: 1.5rem; /* 24px */ }
+  .fs-xl { font-size: 12.5rem; /* 40px */ }
+  .fs-xxl { font-size: 5rem; /* 80px */ }
+
+}
+
+/* styles for desktop devices */
+@media (min-width: 992px) {
+  /* styles for desktop devices */
+
+  .fs-md { font-size: 1.75rem; /* 28px */ }
+  .fs-lg { font-size: 2rem; /* 32px */ }
+
 }

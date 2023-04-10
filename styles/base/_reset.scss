@@ -51,6 +51,19 @@ select {
     font: inherit;
 }
 
+/* screen reader only - REVIEW */
+.sr-only {
+    position: absolute; 
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px; 
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap; /* added line */
+    border: 0;
+  }
+
 /* -------------------------- */
 /* THEME ONLY                 */
 /* -------------------------- */
@@ -60,4 +73,13 @@ body {
     font-weight: $fw-regular;
     background-repeat: no-repeat;
     background-size: cover;
+    color: rgb($clr-accent);
+    font-family: $ff-sans;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: min-content 1fr;
+
+    & p {
+        line-height: 1.8;
+    }
 }

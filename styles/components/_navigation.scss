@@ -1,5 +1,10 @@
 .primary-navigation {
+    padding: 2rem;
     gap: 4rem;
+    background-color: rgba(255, 255, 255, .1);
+
+    /* backdrop-filter property is used to apply one or more filter effects to the area behind an element. In this case we used the blur filter */
+    backdrop-filter: blur(2rem);
 
     & a {
         text-decoration: none;
@@ -13,10 +18,104 @@
 
 }
 
+/* styles for mobile devices */
+@media (max-width: 767px) {
+    /* styles for mobile devices */
+
+    .primary-navigation {
+        flex-direction: column;
+        position: fixed;
+        z-index: 1000;
+        inset: 0 0 0 30%;
+        padding: min(20rem, 20vh) 2rem;
+        gap: 1rem;
+    }
+
+  }
+
+.tab-list {
+    gap: 2rem;
+}
+
 .underline-indicators {
 
     & > * {
-    border-bottom: 2px solid rgb($clr-white);
+    cursor: pointer;
+    border: 0;
+    border-bottom: .2rem solid rgba(255, 255, 255, 0);
     padding-bottom: 1rem;
+    position: relative;
+
+    &:hover, :focus {
+        border-color: rgba(255, 255, 255, .5);
     }
+
+    &.active {
+        border-color: rgba(255, 255, 255, 1);
+    }
+
+    }
+}
+
+/* styles for mobile devices */
+@media (max-width: 767px) {
+    /* styles for mobile devices */
+
+    .primary-navigation.underline-indicators {
+
+        & > * {
+
+            border: 0;
+
+            }
+    }
+
+  }
+
+.dot-indicators {
+    gap: 1rem;
+    
+    & > * {
+        cursor: pointer;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        border: 0px;
+        padding: .5rem;
+        background-color: rgba(255, 255, 255, .25);
+
+        &:hover, :focus {
+            background-color: rgba(255, 255, 255, .5);
+        }
+    
+        &.active {
+            background-color: rgba(255, 255, 255, 1);
+        }
+
+    }
+
+}
+
+.number-indicators {
+    gap: 1rem;
+    
+    & > * {
+        cursor: pointer;
+        width: 4rem;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, .25);
+        background-color: rgb($clr-dark);
+
+        &:hover, :focus {
+            border-color: rgba(255, 255, 255, .5);
+            background-color: rgb($clr-white);
+            color: rgb($clr-dark);
+        }
+    
+        &.active {
+            border-color: rgba(255, 255, 255, 1);
+        }
+
+    }
+
 }
