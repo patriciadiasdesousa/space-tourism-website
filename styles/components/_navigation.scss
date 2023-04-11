@@ -4,7 +4,7 @@
     background-color: rgba(255, 255, 255, .1);
 
     /* backdrop-filter property is used to apply one or more filter effects to the area behind an element. In this case we used the blur filter */
-    backdrop-filter: blur(2rem);
+    backdrop-filter: blur(20px);
 
     & a {
         text-decoration: none;

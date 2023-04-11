@@ -355,8 +355,8 @@ body p {
   gap: 4rem;
   background-color: rgba(255, 255, 255, 0.1);
   /* backdrop-filter property is used to apply one or more filter effects to the area behind an element. In this case we used the blur filter */
-  -webkit-backdrop-filter: blur(2rem);
-          backdrop-filter: blur(2rem);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
 }
 .primary-navigation a {
   text-decoration: none;
