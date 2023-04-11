@@ -18,6 +18,12 @@
 
 }
 
+.mobile-nav-toggle {
+    display: none;
+}
+
+/* ------- START MEDIA QUERY --------- */
+
 /* styles for mobile devices */
 @media (max-width: 767px) {
     /* styles for mobile devices */
@@ -29,9 +35,26 @@
         inset: 0 0 0 30%;
         padding: min(20rem, 20vh) 2rem;
         gap: 1rem;
+        transform: translateX(100%);
+    }
+
+    .mobile-nav-toggle {
+        display: block;
+        position: absolute;
+        z-index: 2000;
+        right: 1rem;
+        top: 2rem;
+        background: transparent;
+        border: 0;
+        background-image: url('../assets/shared/icon-hamburger.svg');
+        width: 1.5rem;
+        aspect-ratio: 1;
+        background-repeat: no-repeat;
     }
 
   }
+
+/* ------- END MEDIA QUERY --------- */
 
 .tab-list {
     gap: 2rem;
@@ -57,6 +80,8 @@
     }
 }
 
+/* ------- START MEDIA QUERY --------- */
+
 /* styles for mobile devices */
 @media (max-width: 767px) {
     /* styles for mobile devices */
@@ -71,6 +96,8 @@
     }
 
   }
+
+/* ------- END MEDIA QUERY --------- */
 
 .dot-indicators {
     gap: 1rem;
