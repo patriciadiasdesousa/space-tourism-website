@@ -384,6 +384,14 @@ body p {
     gap: 1rem;
     transform: translateX(100%);
   }
+  .primary-navigation[data-visible=true] {
+    transform: translateX(0);
+    transition: transform 350ms ease-in-out;
+  }
+  .primary-navigation[data-visible=false] {
+    transform: translateX(1);
+    transition: transform 350ms ease-in-out;
+  }
   .mobile-nav-toggle {
     display: block;
     position: absolute;
@@ -393,9 +401,13 @@ body p {
     background: transparent;
     border: 0;
     background-image: url("../assets/shared/icon-hamburger.svg");
+    background-position: center;
     width: 1.5rem;
     aspect-ratio: 1;
     background-repeat: no-repeat;
+  }
+  .mobile-nav-toggle[aria-expanded=true] {
+    background-image: url("../assets/shared/icon-close.svg");
   }
 }
 /* ------- END MEDIA QUERY --------- */
