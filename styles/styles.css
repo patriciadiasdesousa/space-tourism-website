@@ -311,6 +311,7 @@ body p {
   }
   .grid-container > *:last-child {
     grid-column: 3;
+    justify-content: end;
   }
   .home .grid-container {
     padding-bottom: max(6rem, 20vh);
@@ -349,6 +350,15 @@ body p {
 .large-button:hover::after, .large-button :focus::after {
   opacity: 1;
   transform: scale(1.5);
+}
+
+.primary-header {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
 }
 
 .primary-navigation {
