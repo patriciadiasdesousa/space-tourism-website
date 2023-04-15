@@ -311,6 +311,7 @@ body p {
   }
   .grid-container > *:last-child {
     grid-column: 3;
+    justify-content: end;
   }
   .home .grid-container {
     padding-bottom: max(6rem, 20vh);
