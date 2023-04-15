@@ -351,8 +351,40 @@ body p {
   transform: scale(1.5);
 }
 
+.primary-header {
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* -------- START MEDIA QUERY ---------- */
+/* styles for desktop devices */
+@media (min-width: 992px) {
+  /* styles for desktop devices */
+  .primary-header {
+    margin-top: 2rem;
+  }
+  .primary-header::after {
+    content: "";
+    display: block;
+    position: relative;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.25);
+    width: 100%;
+    order: 1;
+    margin-right: -2.5rem;
+    margin-left: 5rem;
+  }
+  nav {
+    order: 2;
+  }
+}
+/* ---------- END MEDIA QUERY ---------- */
+.logo {
+  margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
+}
+
 .primary-navigation {
-  padding: 2rem;
+  padding-inline: 2rem;
   gap: 4rem;
   background-color: rgba(255, 255, 255, 0.1);
   /* backdrop-filter property is used to apply one or more filter effects to the area behind an element. In this case we used the blur filter */
@@ -386,11 +418,11 @@ body p {
   }
   .primary-navigation[data-visible=true] {
     transform: translateX(0);
-    transition: transform 350ms ease-in-out;
+    transition: transform 550ms ease-in-out;
   }
   .primary-navigation[data-visible=false] {
     transform: translateX(1);
-    transition: transform 350ms ease-in-out;
+    transition: transform 550ms ease-in-out;
   }
   .mobile-nav-toggle {
     display: block;
@@ -410,6 +442,20 @@ body p {
     background-image: url("../assets/shared/icon-close.svg");
   }
 }
+/* styles for tablet devices */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* styles for tablet devices */
+  .primary-navigation span {
+    display: none;
+  }
+}
+/* styles for desktop devices */
+@media (min-width: 992px) {
+  /* styles for desktop devices */
+  .primary-navigation {
+    padding-inline: 10rem;
+  }
+}
 /* ------- END MEDIA QUERY --------- */
 .tab-list {
   gap: 2rem;
@@ -419,7 +465,7 @@ body p {
   cursor: pointer;
   border: 0;
   border-bottom: 0.2rem solid rgba(255, 255, 255, 0);
-  padding-bottom: 1rem;
+  padding: 2.5rem 0;
   position: relative;
 }
 .underline-indicators > *:hover, .underline-indicators > * :focus {
@@ -435,6 +481,7 @@ body p {
   /* styles for mobile devices */
   .primary-navigation.underline-indicators > * {
     border: 0;
+    padding: 0.75rem 0;
   }
 }
 /* ------- END MEDIA QUERY --------- */

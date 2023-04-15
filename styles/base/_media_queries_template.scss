@@ -1,14 +1,19 @@
+/* -------- START MEDIA QUERY ---------- */
+
 /* styles for mobile devices */
 @media (max-width: 767px) {
-    /* styles for mobile devices */
-  }
-  
+  /* styles for mobile devices */
+}
+
+/* styles for tablet devices */
+@media (min-width: 768px) and (max-width: 991px) {
   /* styles for tablet devices */
-  @media (min-width: 768px) and (max-width: 991px) {
-    /* styles for tablet devices */
-  }
-  
+}
+
+/* styles for desktop devices */
+@media (min-width: 992px) {
   /* styles for desktop devices */
-  @media (min-width: 992px) {
-    /* styles for desktop devices */
-  }
+} 
+
+
+/* ---------- END MEDIA QUERY ---------- */

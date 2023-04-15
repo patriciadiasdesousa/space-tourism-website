@@ -1,0 +1,41 @@
+.primary-header {
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* -------- START MEDIA QUERY ---------- */
+  
+  /* styles for desktop devices */
+  @media (min-width: 992px) {
+    /* styles for desktop devices */
+
+    .primary-header {
+        margin-top: 2rem;
+
+        &::after {
+            content: '';
+            display: block;
+            position: relative;
+            height: 1px;
+            background-color: rgba(255, 255, 255, .25);
+            width: 100%;
+            order: 1;
+            margin-right: -2.5rem;
+            margin-left: 5rem;
+        }
+
+    }
+
+    nav {
+        order: 2;
+    }
+    
+
+  } 
+  
+  
+  /* ---------- END MEDIA QUERY ---------- */
+
+.logo {
+    margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
+}
