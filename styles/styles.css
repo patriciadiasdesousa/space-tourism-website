@@ -137,11 +137,18 @@
   background-image: url(../assets/home/background-home-mobile.jpg);
 }
 
+.destination {
+  background-image: url(../assets/destination/background-destination-mobile.jpg);
+}
+
 /* styles for tablet devices */
 @media (min-width: 768px) and (max-width: 991px) {
   /* styles for tablet devices */
   .home {
     background-image: url(../assets/home/background-home-tablet.jpg);
+  }
+  .destination {
+    background-image: url(../assets/destination/background-destination-tablet.jpg);
   }
 }
 /* styles for desktop devices */
@@ -149,6 +156,9 @@
   /* styles for desktop devices */
   .home {
     background-image: url(../assets/home/background-home-desktop.jpg);
+  }
+  .destination {
+    background-image: url(../assets/destination/background-destination-desktop.jpg);
   }
 }
 /* ----------------------- */
@@ -311,7 +321,6 @@ body p {
   }
   .grid-container > *:last-child {
     grid-column: 3;
-    justify-content: end;
   }
   .home .grid-container {
     padding-bottom: max(6rem, 20vh);

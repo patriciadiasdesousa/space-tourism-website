@@ -6,6 +6,10 @@
 .home {
     background-image: url(../assets/home/background-home-mobile.jpg);
 }
+
+.destination {
+  background-image: url(../assets/destination/background-destination-mobile.jpg);
+}
   
   /* styles for tablet devices */
   @media (min-width: 768px) and (max-width: 991px) {
@@ -14,6 +18,10 @@
     .home {
         background-image: url(../assets/home/background-home-tablet.jpg);
     }
+
+    .destination {
+      background-image: url(../assets/destination/background-destination-tablet.jpg);
+  }
 
   }
   
@@ -24,5 +32,9 @@
     .home {
         background-image: url(../assets/home/background-home-desktop.jpg);
     }
+
+    .destination {
+      background-image: url(../assets/destination/background-destination-desktop.jpg);
+  }
 
   }

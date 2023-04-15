@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/styles.css">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+
+<body class="destination bg-dark">
+
+  <header class="primary-header flex">
+    
+    <!-- LOGO -->
+    <div>
+      <img src="./assets/shared/logo.svg" alt="space tourism logo" class="logo">
+    </div>
+
+    <!-- MOBILE MENU -->
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+
+    <!-- NAVIGATION -->
+      <nav>
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+          <li><a href="index.html" class="ff-sans-condensed fw-regular fs-base txt-white uppercase letter-spacing-md"><span aria-hidden="true">01</span>Home</a></li>
+          <li class="active"><a href="destination.html" class="ff-sans-condensed fw-regular fs-base txt-white uppercase letter-spacing-md"><span aria-hidden="true">02</span>Destination</a></li>
+          <li><a href="crew.html" class="ff-sans-condensed fw-regular fs-base txt-white uppercase letter-spacing-md"><span aria-hidden="true">03</span>Crew</a></li>
+          <li><a href="technology.html" class="ff-sans-condensed fw-regular fs-base txt-white uppercase letter-spacing-md"><span aria-hidden="true">04</span>Technology</a></li>
+        </ul>
+      </nav>
+
+  </header>
+
+  <main class="grid-container">
+
+    <h1 class="fs-md fw-regular uppercase letter-spacing-lg ff-sans-condensed"><span class="">01</span> Pick your destination</h1>
+
+    <div>
+      <img src="./assets/destination/image-moon.png">
+
+
+    </div>
+
+    <div>
+      Moon
+      Mars
+      Europa
+      Titan
+    
+      Moon
+    
+      See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+      regain perspective and come back refreshed. While you’re there, take in some history 
+      by visiting the Luna 2 and Apollo 11 landing sites.
+    
+      Avg. distance
+      384,400 km
+    
+      Est. travel time
+      3 days
+      
+    </div>
+
+  <script src="./scripts/navigation.js" defer></script>
+
+</body>
+</html>
