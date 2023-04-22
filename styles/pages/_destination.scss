@@ -1,0 +1,27 @@
+.destination {
+
+    &-data {
+        gap: 2rem;
+        align-items: center;
+    }
+}
+
+/* -------- START MEDIA QUERY ---------- */
+  
+  /* styles for tablet and desktop devices */
+  @media (min-width: 768px) {
+    /* styles for desktop devices */
+
+    .destination {
+
+        &-data {
+            display: flex;
+            gap: 4rem;
+            align-items: flex-start;
+        }
+    }
+
+  } 
+  
+  
+  /* ---------- END MEDIA QUERY ---------- */

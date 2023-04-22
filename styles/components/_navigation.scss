@@ -120,6 +120,13 @@
     }
 }
 
+.destination .underline-indicators {
+
+    & > * {
+    padding: 1.5rem 0;
+    }
+}
+
 /* ------- START MEDIA QUERY --------- */
 
 /* styles for mobile devices */

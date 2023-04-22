@@ -35,6 +35,12 @@
     /*  place-items is a shorthand property used to set both the align-items and justify-items properties simultaneously for all the items inside a grid or flex container. These properties control the alignment of items along the vertical and horizontal axes, respectively. */
     place-items: center;
     padding-inline: 2rem;
+    border: 1px solid red;
+
+    &-span {
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
 }
 
   /* styles for desktop devices */
@@ -48,18 +54,23 @@
     
         & > *:first-child {
             grid-column: 2;
+            border: 1px solid yellow;
         }
     
         & > *:last-child {
             grid-column: 3;
+            border: 1px solid yellow;
             
         }
+
     }
 
     .home .grid-container {
         padding-bottom: max(6rem, 20vh);
         align-items: end;
     }
+
+
   
   }
 
