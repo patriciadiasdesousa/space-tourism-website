@@ -284,6 +284,7 @@
 .destination .grid-container img {
   grid-area: image;
   max-width: 80%;
+  margin-top: 2rem;
 }
 .destination .grid-container .tab-list {
   grid-area: tabs;
