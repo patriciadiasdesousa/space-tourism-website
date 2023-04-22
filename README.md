@@ -28,8 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: (https://spacetourwebsite.netlify.app)
 
 ## My process
 - Crested all the base styles first, using Sass variables and utility classes;
@@ -70,6 +69,8 @@ Users should be able to:
 
    /* Using backdrop-filter property to create a blurred effect in the mobile menu */
    backdrop-filter: blur(2rem);
+
+   /* Used template areas to position the content */
 
 ```
 

@@ -28,6 +28,7 @@
     &-span {
         grid-column-start: 2;
         grid-column-end: 4;
+
     }
 
 }
@@ -101,7 +102,7 @@
 
         & img {
             grid-area: image;
-            max-width: 60%;
+            max-width: 80%;
         }
 
         & .tab-list {

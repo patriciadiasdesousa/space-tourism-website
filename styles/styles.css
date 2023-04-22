@@ -153,6 +153,10 @@
   background-image: url(../assets/home/background-home-mobile.jpg);
 }
 
+.bg-transparent {
+  background: rgba(255, 255, 255, 0);
+}
+
 .destination {
   background-image: url(../assets/destination/background-destination-mobile.jpg);
 }
@@ -279,7 +283,7 @@
 }
 .destination .grid-container img {
   grid-area: image;
-  max-width: 60%;
+  max-width: 80%;
 }
 .destination .grid-container .tab-list {
   grid-area: tabs;
