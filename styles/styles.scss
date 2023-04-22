@@ -1,12 +1,10 @@
 @import "base/typography";
 @import "base/backgrounds";
 @import "base/colors";
+@import "base/grid-containers";
 @import "base/reset";
 @import "base/utility-classes";
 
 @import "components/buttons";
 @import "components/header";
 @import "components/navigation";
-
-@import "pages/home";
-@import "pages/destination";

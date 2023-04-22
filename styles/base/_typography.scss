@@ -32,13 +32,14 @@ $fs-base: 1rem; /* 16px */
 
 /* Font Sizes */
 
-.fs-base { font-size: $fs-base; }
-.fs-sm { font-size: 0.875rem; /* 14px */; }
-.fs-md { font-size: 1rem; /* 16px */ }
-.fs-lg { font-size: 1rem; /* 16px */ }
-.fs-xl { font-size: 1.5rem; /* 24px */ }
-.fs-xxl { font-size: 3.5rem; /* 56px */ }
-.fs-xxxl { font-size: clamp(5rem, 10vw, 9.25rem); /* 80px */ }
+.fs-900 {font-size: clamp(5rem, 8vw + 1rem, 9.375rem);}
+.fs-800 {font-size: 3.5rem; }
+.fs-700 {font-size: 1.5rem; }
+.fs-600 {font-size: 1rem; }
+.fs-500 {font-size: 1rem; }
+.fs-400 {font-size: 0.9375rem; }
+.fs-300 {font-size: 1rem; }
+.fs-200 {font-size: 0.875rem; }
 
 /* Font Style */
 
@@ -63,7 +64,7 @@ $fs-base: 1rem; /* 16px */
 
 .numbered-title {
     font-family: $ff-sans-condensed;
-    font-size: $fs-base;
+    font-size: 1rem;
     letter-spacing: 2.7px;
     text-transform: uppercase;
 
@@ -87,10 +88,11 @@ $fs-base: 1rem; /* 16px */
 @media (min-width: 768px) {
   /* styles for tablet devices */
 
-  .fs-md { font-size: 1.25rem; /* 20px */ }
-  .fs-lg { font-size: 1.5rem; /* 24px */ }
-  .fs-xl { font-size: 12.5rem; /* 40px */ }
-  .fs-xxl { font-size: 5rem; /* 80px */ }
+  .fs-800 { font-size: 5rem; }
+  .fs-700 { font-size: 2.5rem; }
+  .fs-600 { font-size: 1.5rem; }
+  .fs-500 { font-size: 1.25rem; }
+  .fs-400 { font-size: 1rem; }
 
 }
 
@@ -98,7 +100,10 @@ $fs-base: 1rem; /* 16px */
 @media (min-width: 992px) {
   /* styles for desktop devices */
 
-  .fs-md { font-size: 1.75rem; /* 28px */ }
-  .fs-lg { font-size: 2rem; /* 32px */ }
+  .fs-800 { font-size: 6.25rem; }
+  .fs-700 { font-size: 3.5rem; }
+  .fs-600 { font-size: 2rem; }
+  .fs-500 { font-size: 1.75rem; }
+  .fs-400 { font-size: 1.125rem; }
 
 }
