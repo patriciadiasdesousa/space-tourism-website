@@ -4,6 +4,7 @@
 /* 1. Containers                */
 /* 2. Home Containers           */
 /* 3. Destination Containers    */
+/* 4. crew Containers           */
 /* -----------------------------*/
 
 /* -----------------------------*/
@@ -189,3 +190,23 @@
 
   } 
   
+/* -----------------------------*/
+/* 4. Crew Containers    */
+/* -----------------------------*/
+
+.crew .grid-container {
+
+        & img {
+            max-width: 50%;
+        }
+
+}
+
+.feature-img {
+
+    border-bottom: 1px solid rgba(255, 255, 255, .25);
+    text-align: center;
+    align-items: baseline;
+    justify-content: center;
+
+}

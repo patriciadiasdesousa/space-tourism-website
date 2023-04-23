@@ -161,6 +161,10 @@
   background-image: url(../assets/destination/background-destination-mobile.jpg);
 }
 
+.crew {
+  background-image: url(../assets/crew/background-crew-mobile.jpg);
+}
+
 /* styles for tablet devices */
 @media (min-width: 768px) and (max-width: 991px) {
   /* styles for tablet devices */
@@ -169,6 +173,9 @@
   }
   .destination {
     background-image: url(../assets/destination/background-destination-tablet.jpg);
+  }
+  .crew {
+    background-image: url(../assets/crew/background-crew-tablet.jpg);
   }
 }
 /* styles for desktop devices */
@@ -179,6 +186,9 @@
   }
   .destination {
     background-image: url(../assets/destination/background-destination-desktop.jpg);
+  }
+  .crew {
+    background-image: url(../assets/crew/background-crew-desktop.jpg);
   }
 }
 /* ----------------------- */
@@ -214,6 +224,7 @@
 /* 1. Containers                */
 /* 2. Home Containers           */
 /* 3. Destination Containers    */
+/* 4. crew Containers           */
 /* -----------------------------*/
 /* -----------------------------*/
 /* 1. Containers                */
@@ -339,6 +350,20 @@
     gap: 4rem;
   }
 }
+/* -----------------------------*/
+/* 4. Crew Containers    */
+/* -----------------------------*/
+.crew .grid-container img {
+  max-width: 50%;
+}
+
+.feature-img {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  text-align: center;
+  align-items: baseline;
+  justify-content: center;
+}
+
 *,
 *::before,
 *::after {
