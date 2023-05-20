@@ -101,7 +101,7 @@
             grid-area: title;
         }
 
-        & img {
+        & picture {
             grid-area: image;
             max-width: 80%;
             margin-top: 2rem;
@@ -136,7 +136,7 @@
 
     .grid-container-destination{
 
-        & img {
+        & picture {
             grid-area: image;
             max-width: 40%;
         }
@@ -176,7 +176,7 @@
             '. image tabs .'
             '. image content .';
             
-        & img {
+        & picture {
             max-width: 90%;
         }
 
@@ -206,7 +206,7 @@
             grid-area: title;
         }
 
-        & img {
+        & picture {
             grid-area: image;
             max-width: 70%;
             border-bottom: 1px solid rgba(255, 255, 255, .25);
@@ -260,7 +260,7 @@
         justify-self: start;
     }
 
-    & img {
+    & picture {
         align-self: end;
     }
 
