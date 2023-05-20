@@ -170,6 +170,24 @@
 
 }
 
+/* ------- START MEDIA QUERY --------- */
+
+/* styles for mobile devices */
+@media (max-width: 767px) {
+    /* styles for mobile devices */
+
+    .dot-indicators {
+
+        & > * {
+            padding: .3rem;
+        }
+    
+    }
+
+  }
+
+/* ------- END MEDIA QUERY --------- */
+
 .number-indicators {
     gap: 1rem;
     

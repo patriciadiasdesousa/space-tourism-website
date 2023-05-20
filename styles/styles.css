@@ -48,6 +48,10 @@
   font-size: 0.875rem;
 }
 
+.p {
+  font-size: 0.9375rem;
+}
+
 /* Font Style */
 .ff-serif {
   font-family: "Bellefair", serif;
@@ -124,6 +128,9 @@
   .fs-400 {
     font-size: 1rem;
   }
+  .p {
+    font-size: 1rem;
+  }
 }
 /* styles for desktop devices */
 @media (min-width: 992px) {
@@ -142,6 +149,9 @@
   }
   .fs-400 {
     font-size: 1.125rem;
+  }
+  .p {
+    font-size: 1rem;
   }
 }
 .body {
@@ -285,39 +295,39 @@
 /* -----------------------------*/
 /* 3. Destination Containers    */
 /* -----------------------------*/
-.destination .grid-container {
+.grid-container-destination {
   grid-template-areas: "title" "image" "tabs" "content";
   padding-bottom: 2rem;
 }
-.destination .grid-container .numbered-title {
+.grid-container-destination .numbered-title {
   grid-area: title;
 }
-.destination .grid-container img {
+.grid-container-destination img {
   grid-area: image;
   max-width: 80%;
   margin-top: 2rem;
 }
-.destination .grid-container .tab-list {
+.grid-container-destination .tab-list {
   grid-area: tabs;
 }
-.destination .grid-container .destination-info {
+.grid-container-destination .destination-info {
   grid-area: content;
 }
-.destination .grid-container .destination-data {
+.grid-container-destination .destination-data {
   flex-direction: column;
   border-top: 1px solid rgba(255, 255, 255, 0.25);
   margin-top: 2rem;
   padding-top: 2rem;
   gap: 1rem;
 }
-.destination .grid-container .destination-data p {
+.grid-container-destination .destination-data p {
   font-size: 1.75rem;
 }
 
 /* styles for tablet devices */
 @media (min-width: 768px) and (max-width: 991px) {
   /* styles for tablet devices */
-  .destination .grid-container img {
+  .grid-container-destination img {
     grid-area: image;
     max-width: 40%;
   }
@@ -325,11 +335,11 @@
 /* styles for tablet and desktop devices */
 @media (min-width: 768px) {
   /* styles for tablet devices */
-  .destination .grid-container .numbered-title {
+  .grid-container-destination .numbered-title {
     justify-self: start;
     margin: 2rem 0;
   }
-  .destination .grid-container .destination-data {
+  .grid-container-destination .destination-data {
     flex-direction: row;
     justify-content: space-evenly;
   }
@@ -337,14 +347,14 @@
 /* styles for desktop devices */
 @media (min-width: 992px) {
   /* styles for desktop devices */
-  .destination .grid-container {
+  .grid-container-destination {
     justify-items: start;
     grid-template-areas: ". title title ." ". image tabs ." ". image content .";
   }
-  .destination .grid-container img {
+  .grid-container-destination img {
     max-width: 90%;
   }
-  .destination .grid-container .destination-data {
+  .grid-container-destination .destination-data {
     flex-direction: row;
     justify-content: flex-start;
     gap: 4rem;
@@ -353,17 +363,51 @@
 /* -----------------------------*/
 /* 4. Crew Containers    */
 /* -----------------------------*/
-.crew .grid-container img {
-  max-width: 50%;
+.grid-container-crew {
+  grid-template-areas: "title" "image" "tabs" "content";
 }
-
-.feature-img {
+.grid-container-crew .numbered-title {
+  grid-area: title;
+}
+.grid-container-crew img {
+  grid-area: image;
+  max-width: 70%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   text-align: center;
   align-items: baseline;
   justify-content: center;
 }
+.grid-container-crew .dot-indicators {
+  grid-area: tabs;
+}
+.grid-container-crew .crew-info {
+  grid-area: content;
+}
 
+/* styles for tablet devices */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* styles for tablet devices */
+  .grid-container-crew {
+    grid-template-areas: "title" "content" "tabs" "image";
+  }
+}
+/* styles for desktop devices */
+@media (min-width: 992px) {
+  /* styles for desktop devices */
+  .grid-container-crew {
+    grid-template-areas: ". title image ." ". content image ." ". tabs image .";
+  }
+  .grid-container-crew .numbered-title {
+    justify-self: start;
+    margin: 2rem 0;
+  }
+  .grid-container-crew .dot-indicators {
+    justify-self: start;
+  }
+  .grid-container-crew img {
+    align-self: end;
+  }
+}
 *,
 *::before,
 *::after {
@@ -444,7 +488,7 @@ body {
   grid-template-rows: min-content 1fr;
 }
 body p {
-  line-height: 1.8;
+  line-height: 1.6;
 }
 
 /* --------------------------*/
@@ -654,6 +698,15 @@ body p {
   background-color: rgb(255, 255, 255);
 }
 
+/* ------- START MEDIA QUERY --------- */
+/* styles for mobile devices */
+@media (max-width: 767px) {
+  /* styles for mobile devices */
+  .dot-indicators > * {
+    padding: 0.3rem;
+  }
+}
+/* ------- END MEDIA QUERY --------- */
 .number-indicators {
   gap: 1rem;
 }

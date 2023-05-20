@@ -88,7 +88,7 @@
 /* 3. Destination Containers    */
 /* -----------------------------*/
 
-.destination .grid-container {
+.grid-container-destination {
     grid-template-areas:
         'title'
         'image'
@@ -134,7 +134,7 @@
 @media (min-width: 768px) and (max-width: 991px) {
     /* styles for tablet devices */
 
-    .destination .grid-container {
+    .grid-container-destination{
 
         & img {
             grid-area: image;
@@ -149,7 +149,7 @@
 @media (min-width: 768px) {
     /* styles for tablet devices */
 
-    .destination .grid-container {
+    .grid-container-destination {
 
         & .numbered-title {
             justify-self: start;
@@ -169,7 +169,7 @@
 @media (min-width: 992px) {
     /* styles for desktop devices */
 
-    .destination .grid-container {
+    .grid-container-destination {
         justify-items: start;
         grid-template-areas:
             '. title title .'
@@ -194,19 +194,76 @@
 /* 4. Crew Containers    */
 /* -----------------------------*/
 
-.crew .grid-container {
+.grid-container-crew {
 
-        & img {
-            max-width: 50%;
+        grid-template-areas:
+        'title'
+        'image'
+        'tabs'
+        'content';
+
+        & .numbered-title {
+            grid-area: title;
         }
 
+        & img {
+            grid-area: image;
+            max-width: 70%;
+            border-bottom: 1px solid rgba(255, 255, 255, .25);
+            text-align: center;
+            align-items: baseline;
+            justify-content: center;
+        }
+
+        & .dot-indicators {
+            grid-area: tabs;
+        }
+
+        & .crew-info {
+            grid-area: content;
+        }
+
+    }
+
+/* styles for tablet devices */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* styles for tablet devices */
+
+  .grid-container-crew {
+
+    grid-template-areas:
+    'title'
+    'content'
+    'tabs'
+    'image';
 }
 
-.feature-img {
+ }
 
-    border-bottom: 1px solid rgba(255, 255, 255, .25);
-    text-align: center;
-    align-items: baseline;
-    justify-content: center;
+ /* styles for desktop devices */
+ @media (min-width: 992px) {
+    /* styles for desktop devices */
+
+  .grid-container-crew {
+
+    grid-template-areas:
+    '. title image .'
+    '. content image .'
+    '. tabs image .';
+
+    & .numbered-title {
+        justify-self: start;
+        margin: 2rem 0;
+    }
+
+    & .dot-indicators {
+        justify-self: start;
+    }
+
+    & img {
+        align-self: end;
+    }
 
 }
+
+ }
